@@ -31,4 +31,15 @@ f=1.44/((R_A + 2*R_B)*C)
 
 Usar el generador de señal cuadrada + amplificador operacional integrador (LT1056)
 
-TODO: Aun no funciona, hay que arreglar el integrador...
+- R_in = 47k
+- C = 4.7nF
+- R_par = 470k
+- V_ref = 2.5V
+- Vcc = +-12V
+
+## Frecuencia
+
+- Es controlada de igual forma que la señal cuadrada:
+Rpot = 150k -> 1kHz
+Rpot = 0k -> 10kHz
+
