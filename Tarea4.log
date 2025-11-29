@@ -1,0 +1,16 @@
+LTspice 24.0.12 for Windows
+Circuit: * C:\Users\andre\Downloads\Tarea4\Tarea4.asc
+Start Time: Fri Nov 28 14:52:58 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Node N021 is floating.
+
+WARNING: Less than two connections to node nc_01.  This node is used by s:u1:1.
+WARNING: Less than two connections to node n021.  This node is used by c5.
+WARNING: Less than two connections to node nc_03.  This node is used by v8.
+Direct Newton iteration for .op point succeeded.
+Total elapsed time: 13.339 seconds.
+
