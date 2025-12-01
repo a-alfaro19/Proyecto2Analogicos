@@ -1,6 +1,6 @@
 LTspice 24.1.10 for Windows
 Circuit: C:\Users\melis\OneDrive\Desktop\Proyecto2Analogicos\Tarea4.net
-Start Time: Mon Dec  1 15:36:34 2025
+Start Time: Mon Dec  1 17:00:55 2025
 solver = Normal
 Maximum thread count: 8
 tnom = 27
@@ -78,10 +78,11 @@ Source Step = 100%
 Source Step = 100%
 Source stepping succeeded in finding the operating point.
 
-Total elapsed time: 5.070 seconds.
+Total elapsed time: 7.766 seconds.
 
 Files loaded:
 C:\Users\melis\OneDrive\Desktop\Proyecto2Analogicos\Tarea4.net
+C:\Users\melis\AppData\Local\LTspice\lib\cmp\standard.dio
 C:\Users\melis\AppData\Local\LTspice\lib\sub\ADG2404.sub
 C:\Users\melis\AppData\Local\LTspice\lib\sub\LTC.lib
 C:\Users\melis\AppData\Local\LTspice\lib\sub\NE555.sub
