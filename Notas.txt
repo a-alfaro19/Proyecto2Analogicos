@@ -43,3 +43,6 @@ Usar el generador de señal cuadrada + amplificador operacional integrador (LT10
 Rpot = 150k -> 1kHz
 Rpot = 0k -> 10kHz
 
+# Señal Triangular
+
+Se toma el generador de senial cuadrada y se le agrega un filtro RC de cuarto orden con un buffer seguidor de voltaje en cada etapa.
