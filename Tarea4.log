@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 LTspice 24.0.12 for Windows
 Circuit: * C:\Users\andre\OneDrive\Documents\GitHub\Proyecto2Analogicos\Tarea4.asc
 Start Time: Tue Dec  2 20:58:32 2025
+=======
+LTspice 24.1.10 for Windows
+Circuit: C:\Users\melis\OneDrive\Desktop\Proyecto2Analogicos\Tarea4.net
+Start Time: Mon Dec  1 17:00:55 2025
+>>>>>>> 9875e16e58b457c8b94f0f5b4074c5760bb0d96b
 solver = Normal
 Maximum thread count: 16
 tnom = 27
@@ -51,6 +57,7 @@ Starting source stepping with srcstepmethod=1
 Source Step = 3.0303%
 Source stepping failed
 
+<<<<<<< HEAD
 Pseudo Transient failed in finding the operating point at 6.1099 ms.
 Trouble finding operating point....skipping operating point for Transient analysis.
 Changing Tseed to 9.76562e-08
@@ -65,4 +72,14 @@ Changing Tseed to 0.000976562
 Changing Tseed to 9.76562e-14
 Heightened Def Con from 0.0665708 to 0.0665708
 Total elapsed time: 15.970 seconds.
+=======
+Total elapsed time: 7.766 seconds.
+
+Files loaded:
+C:\Users\melis\OneDrive\Desktop\Proyecto2Analogicos\Tarea4.net
+C:\Users\melis\AppData\Local\LTspice\lib\cmp\standard.dio
+C:\Users\melis\AppData\Local\LTspice\lib\sub\ADG2404.sub
+C:\Users\melis\AppData\Local\LTspice\lib\sub\LTC.lib
+C:\Users\melis\AppData\Local\LTspice\lib\sub\NE555.sub
+>>>>>>> 9875e16e58b457c8b94f0f5b4074c5760bb0d96b
 

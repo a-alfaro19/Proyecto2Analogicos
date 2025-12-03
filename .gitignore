@@ -1,0 +1,12 @@
+# LTspice temporary files
+*.raw
+*.log
+*.net
+*.op.raw
+*.fft
+*.ac.raw
+*.step
+*.tmp
+*.err
+*.save
+*.meas
