@@ -1,0 +1,27 @@
+* ADC0804 SPICE Model (National Semiconductor / TI)
+* 8-bit μP Compatible A/D Converter
+*
+.SUBCKT ADC0804 VCC VREF+ VIN+ VIN- CLK WR CS RD INTR DB0 DB1 DB2 DB3 DB4 DB5 DB6 DB7
+* NOTE: This is a behavioral macro-model (NOT transistor level)
+*
+E1 SUM 0 VALUE = { V(VIN+) - V(VIN-) }
+R1 SUM OUT 100K
+E2 OUT 0 VALUE = { V(SUM) }
+*
+* Quantizer (8 bits)
+Bcode CODE 0 V = { round( V(SUM) / ( V(VREF+) / 255 ) ) }
+*
+* Digital outputs (approx. 0V/5V)
+BDB0 DB0 0 V = { if( mod( floor(V(CODE)/1),   2 )==1, VCC, 0 ) }
+BDB1 DB1 0 V = { if( mod( floor(V(CODE)/2),   2 )==1, VCC, 0 ) }
+BDB2 DB2 0 V = { if( mod( floor(V(CODE)/4),   2 )==1, VCC, 0 ) }
+BDB3 DB3 0 V = { if( mod( floor(V(CODE)/8),   2 )==1, VCC, 0 ) }
+BDB4 DB4 0 V = { if( mod( floor(V(CODE)/16),  2 )==1, VCC, 0 ) }
+BDB5 DB5 0 V = { if( mod( floor(V(CODE)/32),  2 )==1, VCC, 0 ) }
+BDB6 DB6 0 V = { if( mod( floor(V(CODE)/64),  2 )==1, VCC, 0 ) }
+BDB7 DB7 0 V = { if( mod( floor(V(CODE)/128), 2 )==1, VCC, 0 ) }
+*
+* READY (INTR)
+BINTR INTR 0 V = { if( V(CODE)>=0, 0, VCC ) }
+*
+.ENDS ADC0804
